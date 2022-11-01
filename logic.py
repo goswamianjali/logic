@@ -1,11 +1,12 @@
-sentence = "\n there are $1 $2 and 5$ candies in the shop"
+sentence = int(input('\n Enter the words:'))
 print(sentence)
 discount = int(input('\n Discount value:'))
 s = sentence.split()
 #len(s)
 for x in range(len(s)):
+
             if s[x][0] =='$':
-              price = int(s[x][1:])
+              price = int(float(s[x][1:]))
               new_price = ''
               new_price+=s[x][0]
               dis = (price*discount) / 100
@@ -17,6 +18,6 @@ for x in range(len(s)):
 
             elif s[x][0] !='$':
                 #print("Not converted values into decimal after applying discount are:")
-                print(s[x], end = ' ')
+              print(s[x], end = ' ')
             else:
               continue
