@@ -13,10 +13,10 @@ for x in range(len(s)):
               apply = "{:.2f}".format(apply)
               s[x] = new_price+apply
               #print("converted values into decimal after applying discount are:")
-              print(s[x])
+              print(s[x], end = ' ')
 
             elif s[x][0] !='$':
                 #print("Not converted values into decimal after applying discount are:")
-                print(s[x])
+                print(s[x], end = ' ')
             else:
               continue
