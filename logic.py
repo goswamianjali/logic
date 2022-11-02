@@ -1,4 +1,4 @@
-sentence = int(input('\n Enter the words:'))
+sentence = input('\n Enter the words:')
 print(sentence)
 discount = int(input('\n Discount value:'))
 s = sentence.split()
