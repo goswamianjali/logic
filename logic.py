@@ -1,4 +1,4 @@
-def discount() -> str:
+def Discounts() -> str:
   sentence = input('\n Enter the words:')
   #print(sentence)
   discount = float(input('\n Discount value:'))
@@ -25,5 +25,5 @@ def discount() -> str:
               return s
   s = []
   return ' '.join(s)
-print(discount())
+print(Discounts())
 
