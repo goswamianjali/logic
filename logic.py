@@ -23,7 +23,7 @@ def discount() -> str:
               print(s[x], end = ' ')
             else:
               return s
-  ans = []
-  return ' '.join(ans)
+  s = []
+  return ' '.join(s)
 print(discount())
 
