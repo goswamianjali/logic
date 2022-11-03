@@ -1,7 +1,7 @@
 def Discounts() -> str:
   sentence = input('\n Enter the words:')
   #print(sentence)
-  discount = float(input('\n Discount value:'))
+  dis = float(input('\n Discount value:'))
   s = sentence.split()
   for x in range(len(s)):
 
@@ -9,7 +9,7 @@ def Discounts() -> str:
               price = float(s[x][1:])
               new_price = ''
               new_price+=s[x][0]
-              dis = (price*discount) / 100
+              dis = (price*dis) / 100
               apply = price - dis
               s[x] = "${:.2f}".format(apply)
               #s[x] = new_price+apply
